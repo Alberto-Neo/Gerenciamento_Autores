@@ -6,6 +6,7 @@ import java.time.LocalDate;
 
 @Entity(name = "autor")
 @Table(name = "tb_autor")
+
 public class AutorModel {
 
     @Id
