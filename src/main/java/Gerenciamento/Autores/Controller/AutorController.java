@@ -26,7 +26,7 @@ public class AutorController {
     }
 
     @PostMapping
-    public AutorModel Criar(AutorModel autorModel){
+    public AutorModel Criar(@RequestBody AutorModel autorModel){
         return autorService.criar(autorModel);
     }
 
