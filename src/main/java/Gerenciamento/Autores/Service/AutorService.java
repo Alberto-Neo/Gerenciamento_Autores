@@ -12,6 +12,9 @@ public class AutorService {
 
     @Autowired
     private AutorRepository autorRepository;
+    public AutorService(AutorRepository autorRepository) {
+        this.autorRepository = autorRepository;
+    }
 
     public List<AutorModel> Listar(){
         return autorRepository.findAll();
